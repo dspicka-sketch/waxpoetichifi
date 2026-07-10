@@ -12,7 +12,7 @@ export default function HomePage() {
   return (
     <>
       {/* Hero */}
-      <section className="relative flex min-h-screen items-end">
+      <section className="relative flex min-h-screen items-center justify-center">
         <Image
           src="/media/2026/07/WaxPoetic_FriendsFamily-1.jpg"
           alt="Wax Poetic listening room"
@@ -21,19 +21,17 @@ export default function HomePage() {
           className="object-cover"
         />
         <div className="hero-overlay absolute inset-0" />
-        <div className="relative z-10 w-full section-padding pb-32 pt-40">
-          <div className="mx-auto max-w-7xl">
-            <div className="mb-8">
-              <Image
-                src="/media/2026/04/logo.png"
-                alt="Wax Poetic"
-                width={280}
-                height={360}
-                className="h-auto w-44 mix-blend-screen drop-shadow-[0_2px_24px_rgba(245,240,235,0.12)] md:w-56"
-                priority
-              />
-            </div>
-            <h1 className="max-w-2xl font-display text-4xl font-semibold leading-tight text-wax-cream md:text-6xl">
+        <div className="relative z-10 w-full section-padding py-32">
+          <div className="mx-auto flex max-w-4xl flex-col items-center text-center">
+            <Image
+              src="/media/2026/04/logo-hero.png"
+              alt="Wax Poetic"
+              width={480}
+              height={620}
+              className="mb-10 h-auto w-72 sm:w-80 md:w-96 lg:w-[28rem]"
+              priority
+            />
+            <h1 className="font-display text-4xl font-semibold leading-tight text-wax-cream md:text-6xl">
               A place to slow down{" "}
               <span className="text-gradient">and listen.</span>
             </h1>
@@ -42,7 +40,7 @@ export default function HomePage() {
               Limited capacity. Intentional sound.
             </p>
 
-            <div className="mt-10 flex flex-wrap gap-4">
+            <div className="mt-10 flex flex-wrap justify-center gap-4">
               <Link href="/events" className="btn-primary">
                 Get Tickets
               </Link>
@@ -54,7 +52,7 @@ export default function HomePage() {
               </Link>
             </div>
 
-            <div className="mt-12 flex flex-wrap gap-6 text-xs uppercase tracking-widest text-wax-cream/40">
+            <div className="mt-12 flex flex-wrap justify-center gap-6 text-xs uppercase tracking-widest text-wax-cream/40">
               <span>Sebastopol, CA</span>
               <span>·</span>
               <span>Limited Capacity</span>
