@@ -1,0 +1,22 @@
+{
+  "site": "https://waxpoetichifi.com",
+  "theme": "waxpoetic-theme",
+  "plugins": [
+    "fluent-smtp/fluent-smtp.php",
+    "bluehost-wordpress-plugin/bluehost-wordpress-plugin.php",
+    "paid-member-subscriptions-basic/index.php",
+    "paid-member-subscriptions/index.php",
+    "wp-crontrol/wp-crontrol.php"
+  ],
+  "wordpress": {
+    "Version": "7.0",
+    "Absolute": "/home1/xdtlqqmy/public_html/website_4aa24458/",
+    "Content": "/home1/xdtlqqmy/public_html/website_4aa24458/wp-content",
+    "Plugins": "/home1/xdtlqqmy/public_html/website_4aa24458/wp-content/plugins",
+    "Themes": [
+      "/home1/xdtlqqmy/public_html/website_4aa24458/wp-content/themes"
+    ],
+    "Uploads": "/home1/xdtlqqmy/public_html/website_4aa24458/wp-content/uploads",
+    "UploadsURL": "https://waxpoetichifi.com/wp-content/uploads/"
+  }
+}
