@@ -32,6 +32,7 @@ export type NavItem = {
 
 export const primaryNav: NavItem[] = [
   { href: "/events", label: "Events" },
+  { href: "/about", label: "About" },
   { href: "/membership", label: "Sound Society" },
   { href: "/rentals", label: "Private Events" },
 ];
