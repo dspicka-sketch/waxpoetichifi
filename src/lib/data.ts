@@ -25,6 +25,22 @@ export const site = {
   },
 } as const;
 
+export type NavItem = {
+  href: string;
+  label: string;
+};
+
+export const primaryNav: NavItem[] = [
+  { href: "/events", label: "Events" },
+  { href: "/membership", label: "Sound Society" },
+  { href: "/rentals", label: "Private Events" },
+];
+
+export const headerCta = {
+  label: "Join the Sound Society",
+  href: "/membership",
+} as const;
+
 export type MembershipTier = {
   id: string;
   name: string;

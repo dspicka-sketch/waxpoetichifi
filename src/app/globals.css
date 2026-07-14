@@ -15,6 +15,7 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
 }
 
 body {
@@ -57,7 +58,7 @@ body {
 }
 
 .btn-primary {
-  @apply inline-flex items-center justify-center rounded-full bg-wax-amber px-6 py-3 text-sm font-semibold text-wax-charcoal transition-all hover:bg-wax-amber-bright hover:shadow-lg hover:shadow-wax-amber/20;
+  @apply inline-flex items-center justify-center rounded-full bg-wax-amber px-6 py-3 text-sm font-semibold text-wax-charcoal transition-all hover:bg-wax-amber-bright hover:shadow-lg hover:shadow-wax-amber/20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-wax-amber/70;
 }
 
 .btn-secondary {
