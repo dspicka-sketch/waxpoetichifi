@@ -32,7 +32,7 @@ export default function HomePage() {
               alt="Wax Poetic"
               width={480}
               height={620}
-              className="mb-8 h-auto w-72 opacity-75 sm:w-80 md:mb-10 md:w-96 lg:w-[28rem]"
+              className="mb-10 h-auto w-72 opacity-75 sm:mb-12 sm:w-80 md:mb-14 md:w-96 lg:mb-16 lg:w-[28rem]"
               priority
             />
 
@@ -40,13 +40,13 @@ export default function HomePage() {
               A Community United Through Music.
             </h1>
 
-            <p className="mt-6 max-w-[620px] text-base leading-relaxed text-wax-cream/75 sm:text-lg">
-              Home to the Sound Society, Wax Poetic is a listening room where
-              intentional listening, shared discovery, and unforgettable
-              experiences bring people together.
+            <p className="mt-8 max-w-[620px] text-base leading-relaxed text-wax-cream/75 sm:mt-10 sm:text-lg md:mt-12">
+              A listening room and gathering place where music brings people
+              together through intentional listening, shared discovery, and
+              unforgettable experiences.
             </p>
 
-            <div className="mt-10 flex w-full max-w-md flex-col justify-center gap-4 sm:w-auto sm:max-w-none sm:flex-row sm:gap-6">
+            <div className="mt-12 flex w-full max-w-md flex-col justify-center gap-4 sm:mt-14 sm:w-auto sm:max-w-none sm:flex-row sm:gap-6 md:mt-16">
               <Link
                 href="/membership"
                 className="btn-primary w-full justify-center sm:w-auto"
@@ -61,77 +61,6 @@ export default function HomePage() {
                 View Events
               </Link>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Sound Society Introduction */}
-      <section className="section-padding">
-        <div className="mx-auto grid max-w-7xl items-center gap-12 lg:grid-cols-2 lg:gap-16">
-          <div>
-            <p className="text-xs uppercase tracking-[0.2em] text-wax-amber">
-              The Sound Society
-            </p>
-
-            <h2 className="mt-4 max-w-xl font-display text-3xl font-semibold leading-tight text-wax-cream md:text-4xl">
-              More than a membership. A community built around music.
-            </h2>
-
-            <p className="mt-6 max-w-xl leading-relaxed text-wax-cream/60">
-              The Sound Society brings music lovers together for intentional
-              listening, shared discovery, and meaningful connection.
-            </p>
-
-            <p className="mt-4 max-w-xl leading-relaxed text-wax-cream/60">
-              Members receive priority access to events, member pricing,
-              exclusive gatherings, and a voice in the culture we are building
-              together.
-            </p>
-
-            <Link href="/membership" className="btn-primary mt-8">
-              Explore Membership
-            </Link>
-          </div>
-
-          <div className="relative aspect-[4/3] overflow-hidden rounded-2xl">
-            <Image
-              src="/media/2026/05/group-listening.webp"
-              alt="Members listening to music together at Wax Poetic"
-              fill
-              className="object-cover"
-            />
-          </div>
-        </div>
-      </section>
-
-      {/* Membership Tiers */}
-      <section className="section-padding bg-wax-warm">
-        <div className="mx-auto max-w-7xl">
-          <div className="text-center">
-            <p className="text-xs uppercase tracking-[0.2em] text-wax-amber">
-              Membership
-            </p>
-
-            <h2 className="mt-3 font-display text-3xl font-semibold text-wax-cream md:text-4xl">
-              Find your place in the Sound Society
-            </h2>
-
-            <p className="mx-auto mt-4 max-w-2xl leading-relaxed text-wax-cream/60">
-              Choose the membership that fits how you want to listen, gather,
-              and participate.
-            </p>
-          </div>
-
-          <div className="mt-12 grid gap-6 lg:grid-cols-3">
-            {featuredTiers.map((tier) => (
-              <MembershipCard key={tier.id} tier={tier} />
-            ))}
-          </div>
-
-          <div className="mt-10 text-center">
-            <Link href="/membership" className="btn-secondary">
-              Compare Membership Options
-            </Link>
           </div>
         </div>
       </section>
@@ -179,6 +108,73 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Sound Society Introduction */}
+      <section className="section-padding bg-wax-warm">
+        <div className="mx-auto grid max-w-7xl items-center gap-12 lg:grid-cols-2 lg:gap-16">
+          <div>
+            <p className="text-xs uppercase tracking-[0.2em] text-wax-amber">
+              The Sound Society
+            </p>
+
+            <h2 className="mt-4 max-w-xl font-display text-3xl font-semibold leading-tight text-wax-cream md:text-4xl">
+              More than a membership. A community built around music.
+            </h2>
+
+            <p className="mt-6 max-w-xl leading-relaxed text-wax-cream/60">
+              The Sound Society brings music lovers together for intentional
+              listening, shared discovery, and meaningful connection—with
+              priority access to events, member pricing, and exclusive
+              gatherings.
+            </p>
+
+            <Link href="/membership" className="btn-primary mt-8">
+              Explore Membership
+            </Link>
+          </div>
+
+          <div className="relative aspect-[4/3] overflow-hidden rounded-2xl">
+            <Image
+              src="/media/2026/05/group-listening.webp"
+              alt="Members listening to music together at Wax Poetic"
+              fill
+              className="object-cover"
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* Membership Tiers */}
+      <section className="section-padding">
+        <div className="mx-auto max-w-7xl">
+          <div className="text-center">
+            <p className="text-xs uppercase tracking-[0.2em] text-wax-amber">
+              Membership
+            </p>
+
+            <h2 className="mt-3 font-display text-3xl font-semibold text-wax-cream md:text-4xl">
+              Join the Sound Society
+            </h2>
+
+            <p className="mx-auto mt-4 max-w-2xl leading-relaxed text-wax-cream/60">
+              Choose the membership that best fits how you&apos;d like to
+              participate in the community.
+            </p>
+          </div>
+
+          <div className="mt-12 grid gap-6 lg:grid-cols-3">
+            {featuredTiers.map((tier) => (
+              <MembershipCard key={tier.id} tier={tier} />
+            ))}
+          </div>
+
+          <div className="mt-10 text-center">
+            <Link href="/membership" className="btn-secondary">
+              Become a Member
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* Shop */}
       <section className="section-padding bg-wax-warm">
         <div className="mx-auto max-w-7xl">
@@ -188,7 +184,7 @@ export default function HomePage() {
             </p>
 
             <h2 className="mt-3 font-display text-3xl font-semibold text-wax-cream md:text-4xl">
-              Take the experience home
+              Bring the Music Home
             </h2>
 
             <p className="mx-auto mt-4 max-w-2xl leading-relaxed text-wax-cream/60">
@@ -249,7 +245,7 @@ export default function HomePage() {
       <section className="section-padding">
         <div className="mx-auto max-w-7xl">
           <ConversionBanner
-            title="Host something memorable"
+            title="Gather Together"
             subtitle="Bring people together for birthdays, celebrations, creative gatherings, retreats, and private listening experiences in a room designed around music."
             cta="Inquire About Private Events"
             href="/rentals"
@@ -274,20 +270,10 @@ export default function HomePage() {
               About Wax Poetic
             </p>
 
-            <h2 className="mt-4 font-display text-3xl font-semibold leading-tight text-wax-cream md:text-4xl">
-              Music has always brought people together.
-            </h2>
-
             <p className="mt-6 max-w-xl leading-relaxed text-wax-cream/60">
               Wax Poetic was created to give that experience a home—a place
               where albums are celebrated, conversations begin, and community
               grows one gathering at a time.
-            </p>
-
-            <p className="mt-4 max-w-xl leading-relaxed text-wax-cream/60">
-              Rooted in Sebastopol, we are building a welcoming cultural space
-              for people who want to listen more deeply and connect more
-              meaningfully.
             </p>
 
             <div className="mt-8 flex flex-col gap-4 sm:flex-row">
@@ -300,6 +286,23 @@ export default function HomePage() {
               </Link>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Final CTA */}
+      <section className="section-padding">
+        <div className="mx-auto max-w-3xl text-center">
+          <h2 className="font-display text-3xl font-semibold text-wax-cream md:text-4xl">
+            Ready to Join?
+          </h2>
+
+          <p className="mx-auto mt-4 max-w-xl leading-relaxed text-wax-cream/60">
+            Become part of a community united through music.
+          </p>
+
+          <Link href="/membership" className="btn-primary mt-8">
+            Join the Sound Society
+          </Link>
         </div>
       </section>
     </>
